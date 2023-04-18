@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>你好!</title>
+</head>
+
+<body>
+  <h1>来自 Electron 渲染器的问好！</h1>
+  <p>👋</p>
+  <p id="info"></p>
+  <span id="message"></span>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
