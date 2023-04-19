@@ -2,6 +2,8 @@
 // electron 模块可以用来控制应用的生命周期和创建原生浏览窗口
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
+// 项目更新
+require('update-electron-app')()
 
 const createWindow = () => {
   // 创建浏览窗口
@@ -17,6 +19,9 @@ const createWindow = () => {
   ipcMain.handle('ping', () => 'pong')
   // 加载 index.html
   mainWindow.loadFile('index.html')
+  // mainWindow.loadURL('https://github.com')
+  // const contents = mainWindow.webContents
+  // console.log(contents)
 
   // 打开开发工具
   // mainWindow.webContents.openDevTools()

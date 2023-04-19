@@ -3,7 +3,7 @@ module.exports = {
     icon: './images/icon@1x.ico'
   },
   rebuildConfig: {},
-  // 配置github
+  // 配置github发布者
   publishers: [
     {
       name: '@electron-forge/publisher-github',
