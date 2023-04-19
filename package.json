@@ -1,5 +1,5 @@
 {
-  "name": "text",
+  "name": "electron-app",
   "version": "1.0.0",
   "description": "Hello World!",
   "main": "main.js",
